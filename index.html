@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>2014 PyTennessee - Systematic Bias and the Software Developer</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="">
+		<meta name="author" content="Brian Dailey">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -37,48 +37,188 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+                    <h2>Systematic Bias <br/>and the<br/>Software Developer</h2>
+					<h4>2014 PyTennessee</h4>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small><a href="http://dailytechnology.net/">Brian Dailey</a> / <a href="http://twitter.com/byeliad">@byeliad</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
+					<h2>Who Am I</h2>
+                    <ul>
+                        <li>Python developer</li>
+                        <li>Freelancer</li>
+                        <li>CTO &amp; co-founder at Stratasan</li>
+                    </ul>
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                        The reason I mention freelancer is that in both jobs I am faced with providing advice on probabilities of project success.
 					</aside>
 				</section>
 
+				<section>
+                    <img src="img/thinking-fast-slow-small.jpg" />
+					<aside class="notes">
+                    This talk is mainly going over material from "Thinking, Fast and Slow" by Daniel Kahneman. I read the book about a year ago
+                    and couldn't help but think about the ways that it applied to the software development profession.
+                    Kahneman is a Professor at Princeton and did pioneering work in how we make decisions with Amos Tversky.
+                    The book summarizes much of his research over his career along with other research in decision making.
+
+                    Kahneman's underlying approach is to categorize the brain's activities into two systems: System 1 and System 2.
+					</aside>
+				</section>
+
+                <section data-background="img/tealeaves.jpg">
+                    <aside class="notes">
+                        software development is a lot of
+                        probabalistic decision making
+                        * is this project technically feasible at this cost?
+                        * can we develop X in this timeline?
+                        * will this library make it easier for us
+                            to do our job or just add complications?
+                        * will this person be a good fit for our team?
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>mental heuristic</h3>
+                    <p>Seeks a solution in a reasonable time frame given one's experience, context, and time frame.</p>
+                    <aside class="notes">
+                        A heuristic is a mental shortcut that trades time and effort for accuracy.
+                        The key here is that the solution can often be suboptimal.
+                    </aside>
+                </section>
+
+                <section>
+                    "Maintaining vigilance against biases is a chore, but the chance to avoid a costly mistake is sometimes worth the effort." &mdash; Kahneman
+                    <aside class="notes">
+                        Effort for accuracy is always a tradeoff.
+                        However, in some cases, it's necessary.
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Systematic vs. Random Bias</h3>
+                    <aside class="notes">
+                    Random bias we can do nothing about.
+                    Systematic bias we can make efforts to minimize and control for.
+                    </aside>
+                </section>
+
+				<section data-background="img/eye.jpg">
+                    <h1>System 2</h1>
+                    <aside class="notes">
+                        Let's talk about Kahneman's model for decision making.
+                        This is the conscious decision making system. It is what most will
+                        self-identify with as "you." It is your conscious thought.
+                    </aside>
+                </section>
+
+                <section data-background="img/cosmos.jpg">
+                    <h1>System 1</h1>
+                    <aside class="notes">
+                        Drives or confirms many of the decisions made by System 2.
+                        According to Kahneman, this is where the interesting things
+                        happen.
+
+                        I won't spend a ton of time detailing the differences between
+                        the two systems and how Kahneman arrived at this conclusion.
+                        Read the book.
+                        However, it's important to know that the decisions we make are
+                        often driven by a subconscious engine. This often causes us
+                        to make judgment errors based on weak evidence.
+                    </aside>
+                </section>
+
+                <!-- let's talk about some systematic biases! -->
+                <section>
+                    <h2>Mental Substitution</h2>
+                    <p><q cite="Kahneman">You like or dislike people long before you know much about them; you trust or distrust strangers without knowing why; you feel that an enterprise is bound to succeed without analyzing it.</q> &mdash; Kahneman</p>
+                    <aside class="notes">
+                        Succintly put, we often choose to
+                        skip the hard question and substitude an
+                        easier one.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Will this project succeed or fail?</h2>
+                </section>
+
+                <section>
+                    <h3>Hard</h3>
+                    <ul>
+                        <li>Who are the competitors?</li>
+                        <li>What is the market size?</li>
+                        <li>Is capital available to build &amp; grow?</li>
+                        <li>How much would it cost to maintain?</li>
+                        <li>What can we charge for it?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Easier</h3>
+                    <ul>
+                        <li>Do I like the management?</li>
+                        <li>Do I find the business idea appealing?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Intensity Matching</h2>
+                    <aside class="notes">
+                    If a question has an easily defined
+                    scale, we can borrow the scale from
+                    a similar question.
+                    </aside>
+                </section>
+
+                <section>
+                    <p>How happy are you these days?</p>
+                    <p>How many dates did you have this month?</p>
+                    <aside class="notes">
+                        When asked these questions, college students
+                        showed no correlation between two.
+                    </aside>
+                </section>
+
+                <section>
+                    <p>How many dates did you have this month?</p>
+                    <p>How happy are you these days?</p>
+                    <aside class="notes">
+                    But when they were reversed, the correlation
+                    became quite strong.
+                    Students used the scale of the first question
+                    to answer the second one.
+                    </aside>
+                </section>
+
+                <section>
+                    <p><q>Should we use this software package or write our own?</q></p>
+                </section>
+
+                <section>
+                    <h3>Hard</h3>
+                    <ul>
+                        <li>Does it meet all of our requirements?</li>
+                        <li>Does the project owner have a history of timely responses to issues?</li>
+                        <li>Is it widely adopted by the community?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Easy</h3>
+                    <ul>
+                        <li>How often have I seen this mentioned on HN?</li>
+                        <li>Do I know the project owner and like or dislike him or her??</li>
+                        <li>Do I find the code to be aesthetically pleasing?</li>
+                    </ul>
+                </section>
+
+                <section><h2>Anchoring</h2></section>
+
 				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
 					<section>
 						<h2>Basement Level 3</h2>
 						<p>That's it, time to go back up.</p>
@@ -339,12 +479,21 @@ function linkify( selector ) {
 						<li><a href="http://slid.es">Try the online editor</a></li>
 						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
 						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+                        <li>
 					</ul>
 				</section>
 
 				<section>
 					<h1>THE END</h1>
 					<h3>BY Hakim El Hattab / hakim.se</h3>
+				</section>
+
+				<section>
+					<h4>Photo Credits</h4>
+                    <ul>
+                        <li><a href="http://www.flickr.com/photos/thestarshine/1605185078/">Sarah C</a></li>
+                        <li><A href="http://www.flickr.com/photos/ragnar1984/2853693306/">Ragnar Jensen</a></li>
+                    </ul>
 				</section>
 
 			</div>
