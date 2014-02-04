@@ -57,7 +57,7 @@
 				</section>
 
 				<section>
-                    <img src="img/thinking-fast-slow-small.jpg" />
+                    <img src="img/thinking-fast-slow-small.jpg" alt="thinking fast and slow" />
 					<aside class="notes">
                     This talk is mainly going over material from "Thinking, Fast and Slow" by Daniel Kahneman. I read the book about a year ago
                     and couldn't help but think about the ways that it applied to the software development profession.
@@ -77,6 +77,23 @@
                         * will this library make it easier for us
                             to do our job or just add complications?
                         * will this person be a good fit for our team?
+                    </aside>
+                </section>
+
+                <section>
+                <blockquote>"Some predictive judgments, such as those made by engineers,
+                    rely largely on lookup tables, precise calculations, and explicit
+                    analyses of outcomes observed on similar occasions."
+                </blockquote>
+                <aside class="note">Alas, this sounds nothing like software development as we know it.</aside>
+                </section>
+
+                <section>
+                    <blockquote>"Some intuitions draw primarily on skill and expertise acquired by repeated experience."</blockquote>
+                    <aside class="note">This sounds more like the software dev universe as we know it.
+                        We are often called to make forecasts.
+                        And often we rely on our intuition tuned by
+                        years of experience.
                     </aside>
                 </section>
 
@@ -218,7 +235,7 @@
                 <section><h2>Anchoring</h2></section>
 
                 <section>
-                <p>Anchoring occurs when you "<q cite="p. 119">consider a particular value for an unknown quantity before estimating that quantity.</q>"</p>
+                <p>Anchoring occurs when you "<q>consider a particular value for an unknown quantity before estimating that quantity.</q>"</p>
                 </section>
 
                 <section>
@@ -532,11 +549,112 @@
                     </aside>
                 </section>
 
-                <!-- Intuition vs. Formula -->
+                <!-- Intuition VS Formula -->
                 <section>
+                <h2>Intuition vs. Formula</h2>
+                </section>
+
+                <section>
+                    <img src="img/clinical_vs_statistical.jpg" alt="Clinical vs. Statistical Prediction" />
+                    <aside class="notes">
+                        Paul Meehl - results of predicting grades of freshman at the end
+                        of the year, violations of parole, success in pilot training, etc.
+                    </aside>
+                </section>
+
+                <section>
+                    <blockquote>"...60% of studies show significantly better accuracy for the algorithms."</blockquote>
+                    <aside class="notes">
+                        Many others have conducted similar studies and they all say the same thing.
+                        This is particular true in "domains that entail a significant degree of uncertainty and unpredictability"!
+                        Economics, football games, future prices of wine...
+                    </aside>
+                </section>
+
+                <section>
+                    <blockquote>"...60% of studies show significantly better accuracy for the algorithms."</blockquote>
+                    <aside class="notes">
+                        Many others have conducted similar studies and they all say the same thing.
+                        This is particular true in "domains that entail a significant degree of uncertainty and unpredictability"!
+                        Economics, football games, future prices of wine...
+                    </aside>
+                </section>
+
+                <section data-background="img/vineyard.jpg">
+                    <aside class="notes">
+                        Wines are affected by weather. Predicting value of a vintage is of financial value.
+                        Orley Ashenfelter did it with 3 factors: Avg temp over growing season, amount of rain at harvest time, and
+                        total rainfall in prev winter.
+                        Correlation of prediction to actual prices is above 0.9
+                    </aside>
+                </section>
+
+                <section>
+                    <p>So why are the experts so bad?</p>
+                    <aside class="notes">
+                    Meehl suspects experts try to get clever. Complexity reduces validity.
+                    Experts even feel they can override a formula. "Broken-leg" rule.
+                    We are too easily influenced by system 1!
+                    </aside>
+                </section>
+
+                <section>
+                    <p><q>"The Robust Beauty of Improper Linear Models in Decision Making" - Robyn Dawson</q></p>
+                    <aside class="notes">
+                        Sometimes simpler algorithms can often be 'good enough.'
+                        Thing Apgar score. Standardized and saved lives.
+                    </aside>
+                </section>
+
+                <section>
+                <p>Long feedback loops make forecasting difficult.</p>
+                <aside class="notes">
+                    It's easy to be under the impression that you
+                    are great at making forecasts based on short-term
+                    feedback loops.
+                    "I knew that this feature was going to fail."
+                    "I know our users would love this."
+                    Long term is harder.
+                </aside>
+                </section>
+
+                <section data-background="img/matrix.jpg">
+                    <h3>The Aversion to Machines</3h>
+                    <aside class="notes">
+                        We have a deeply seated mistrust of these algorithms.
+                        We see them as uncaring, sterile, and inflexible.
+                        Is it possible this is costing lives?
+                    </aside>
+                </section>
+
+                <section>
+                    <p>Intuition is still relevant.</p>
+                    <aside class="notes">
+                        The "RPD" (recognition primed decision) arises in
+                        domains where skill and experience come in.
+                        System 1 forms a tentative plan via associative memory
+                        (basically pattern recognition) and system 2 engages
+                        in a mental simulation. Chess players do this. (p. 237)
+                        It's relevant, just less so than we usually think.
+                        Confidence is NOT a reliable guide.
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>How predictive skill is built</h3>
+                    <ul>
+                        <li>A regular, predictable environment.</li>
+                        <li>Practice over time.</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h3>How does this apply?</h3>
                 </section>
 
                 <!-- OPTIMISM: The engine of capitalism -->
+
                 <section>
                 </section>
 
@@ -585,7 +703,7 @@
 					// { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					// { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					// { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					// { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
